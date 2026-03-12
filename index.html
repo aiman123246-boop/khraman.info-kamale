@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>موقع الصور</title>
+
+<script>
+function checkPassword(){
+let password = prompt("ادخل كلمة السر");
+
+if(password === "1234"){
+document.getElementById("content").style.display="block";
+}else{
+alert("كلمة السر خطأ");
+location.reload();
+}
+}
+</script>
+
+</head>
+
+<body onload="checkPassword()">
+
+<div id="content" style="display:none">
+
+<h1>الصور الخاصة</h1>
+
+<img src="photo1.jpg" width="300">
+
+</div>
+
+</body>
+</html>
